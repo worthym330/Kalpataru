@@ -3,7 +3,7 @@
 // Define your meta title and description here
 const metaTitle = "GODREJ NURTURE BHANDUP - Luxurious Apartments in Mumbai";
 // const metaDescription = "Your page description goes here.";
-
+const metaDescription = "Your page description goes here.";
 // Function to set meta tags
 function setMetaTags() {
     document.title = metaTitle;

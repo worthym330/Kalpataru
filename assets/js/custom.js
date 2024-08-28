@@ -108,23 +108,23 @@ $(document).ready(function () {
 
   var exampleModal = document.getElementById("enquire-modal");
   exampleModal.addEventListener("show.bs.modal", function (event) {
-	// Button that triggered the modal
-	var button = event.relatedTarget;
-  
-	// Ensure the button is defined
-	if (button) {
-	  // Extract info from data-bs-* attributes
-	  var recipient = button.getAttribute("data-bs-whatever");
-  
-	  // Update the modal's content.
-	  var modalTitle = exampleModal.querySelector(".modal-title");
-	  var modalBodyInput = exampleModal.querySelector(".modal-body input");
-	console.log(recipient)
-	  modalTitle.textContent = recipient;
-	//   modalBodyInput.value = recipient;
-	} else {
-	  console.warn("The modal was triggered without a related target.");
-	}
+    // Button that triggered the modal
+    var button = event.relatedTarget;
+
+    // Ensure the button is defined
+    if (button) {
+      // Extract info from data-bs-* attributes
+      var recipient = button.getAttribute("data-bs-whatever");
+
+      // Update the modal's content.
+      var modalTitle = exampleModal.querySelector(".modal-title");
+      var modalBodyInput = exampleModal.querySelector(".modal-body input");
+      console.log(recipient);
+      modalTitle.textContent = recipient;
+      //   modalBodyInput.value = recipient;
+    } else {
+      console.warn("The modal was triggered without a related target.");
+    }
   });
 
   if ($(window).innerWidth() < 576) {
@@ -227,8 +227,9 @@ function submitForm(event, formName) {
       return response.json();
     })
     .then((emailResult) => {
-	  document.forms[formName].reset();
-	  var enquireModal = document.getElementById("enquire-modal");
+      window.location.href = "thank-you.html";
+      document.forms[formName].reset();
+      var enquireModal = document.getElementById("enquire-modal");
       var modalInstance = bootstrap.Modal.getInstance(enquireModal);
       if (modalInstance) {
         modalInstance.hide();
