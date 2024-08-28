@@ -119,9 +119,9 @@ $(document).ready(function () {
 	  // Update the modal's content.
 	  var modalTitle = exampleModal.querySelector(".modal-title");
 	  var modalBodyInput = exampleModal.querySelector(".modal-body input");
-  
+	console.log(recipient)
 	  modalTitle.textContent = recipient;
-	  modalBodyInput.value = recipient;
+	//   modalBodyInput.value = recipient;
 	} else {
 	  console.warn("The modal was triggered without a related target.");
 	}
