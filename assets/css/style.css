@@ -412,8 +412,6 @@ input[type=number]::-webkit-inner-spin-button {
     color: #515151;
 }
 
-
-
 .offerBox {
     padding: 5px;
     color: #ffffff;
@@ -455,8 +453,6 @@ input[type=number]::-webkit-inner-spin-button {
     animation: popup 2s ease-in-out infinite;
 }
 
-
-
 @keyframes popup { 
   50%{
     transform: scale(1.1);
@@ -465,8 +461,6 @@ input[type=number]::-webkit-inner-spin-button {
     transform: scale(1);
   }
 }
-
-
 
 /* Effects */
 @keyframes rocking {
@@ -665,8 +659,6 @@ input[type=number]::-webkit-inner-spin-button {
     padding-bottom: 100px;
 }
 
-
-
 .details-btn {
     border: none;
     color: #fff;
@@ -810,25 +802,11 @@ a.viewmore {
     margin:10px;
 }
 
-
-
-
-
 #floor-plan h1 {
     font-size: 30px;
     font-weight: 800;
     color: var(--Primary-color);
 }
-
-
-
-
-
-
-
-
-
-
 
 .pricing-btn {
     background-color: var(--Primary-color);
@@ -838,9 +816,6 @@ a.viewmore {
     margin: 0% 25% 0%;
     padding: 10px 20px;
 }
-
-
-.fade {}
 
 .custom-btn {
     width: 220px;
