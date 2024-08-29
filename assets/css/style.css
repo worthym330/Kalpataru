@@ -186,13 +186,11 @@ nav.navbar {
     height: 59px;
     align-items: center;
     display: flex;
-    font-size: 24px !important;
-    color: #0b4144;
-    line-height: 1.5; /* Adjust line spacing */
-    letter-spacing: 4px; 
 }
 .navbar-light .navbar-brand img{
     width:260px;
+    height: 60px;
+    object-fit:contain;
 }
 .nav ul.navbar-collapse {
     margin: 0px 20px 0px 0px;
