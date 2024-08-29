@@ -73,7 +73,8 @@
             <a class="nav-link" href="#connectivity">Location</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#connectivity">Download Brochure</a>
+            <a class="nav-link" href="" data-bs-target="#enquire-modal"
+            data-bs-toggle="modal" data-bs-whatever="Request Brochure" data-id="Brochure">Download Brochure</a>
           </li>
         </ul>
       </div>
@@ -99,23 +100,23 @@
               <div class="carousel-inner">
                    <div class="carousel-item active">
                     <picture>
-                        <source media="(max-width: 750px)" data-srcset="assets/images/banner/new-banner.webp" type="image/webp" sizes="375px" srcset="assets/images/banner/new-banner.webp">
-                        <img data-sizes="auto" class="d-block" data-srcset="assets/images/banner/new-banner.webp" alt="" width="100%" height="100%" sizes="375px" srcset="assets/images/banner/new-banner.webp">
+                        <source media="(max-width: 750px)" data-srcset="assets/images/banner/Banner3.webp" type="image/webp" sizes="375px" srcset="assets/images/banner/Banner3.webp">
+                        <img data-sizes="auto" class="d-block" data-srcset="assets/images/banner/Banner3.webp" alt="" width="100%" height="100%" sizes="375px" srcset="assets/images/banner/Banner3.webp" >
                      </picture>
            
                 </div>
                    <div class="carousel-item">
                     <picture>
-                        <source media="(max-width: 750px)" data-srcset="assets/images/banner/mobile-Banner.webp" type="image/webp" sizes="375px" srcset="assets/images/banner/mobile-Banner.webp">
-                        <img data-sizes="auto" class="d-block" data-srcset="assets/images/banner/Banner1.webp" alt="" width="100%" height="100%" sizes="375px" srcset="assets/images/banner/Banner1.webp">
+                        <source media="(max-width: 750px)" data-srcset="assets/images/banner/bg2.webp" type="image/webp" sizes="375px" srcset="assets/images/banner/bg2.webp">
+                        <img data-sizes="auto" class="d-block" data-srcset="assets/images/banner/bg2.webp" alt="" width="100%" height="100%" sizes="375px" srcset="assets/images/banner/bg2.webp">
                      </picture>
            
                 </div>
                
                 <div class="carousel-item">
                   <picture>
-                        <source media="(max-width: 750px)" data-srcset="assets/images/banner/m2.webp" type="image/webp" sizes="375px" srcset="assets/images/banner/m2.webp">
-                        <img data-sizes="auto" class="" data-srcset="assets/images/banner/Banner3.webp" alt="" width="100%" height="100%" sizes="375px" srcset="assets/images/banner/Banner3.webp">
+                        <source media="(max-width: 750px)" data-srcset="assets/images/banner/bg3.webp" type="image/webp" sizes="375px" srcset="assets/images/banner/bg3.webp">
+                        <img data-sizes="auto" class="" data-srcset="assets/images/banner/bg3.webp" alt="" width="100%" height="100%" sizes="375px" srcset="assets/images/banner/bg3.webp">
                      </picture>
                 </div>
                
@@ -426,25 +427,47 @@ data-bs-toggle="modal" data-bs-whatever="Request Brochure" data-id="Brochure"><i
               <div class="btn_box text-center">
                 <a href="#" class="btn text-white mt-4 enquiryBtn1 pricing-btn custom-btn data-id-btn" data-bs-target="#enquire-modal"
               data-bs-toggle="modal" data-bs-whatever="Request Master Layout Plan" data-id="Master Layout Plan">
-                <span></span><span></span><span></span><span></span>
-                Request Master Layout Plan
+                  <span></span><span></span><span></span><span></span>
+                  Request Master Layout Plan
                 </a>
               </div>
-            </div>
-            <div class="col-md-6 layout-plan  text-center">
+            </div>            
+            
+            <div class="col-md-6 layout-plan text-center">
               <div class="section-title">
                 <h2>Unit Plan Layout</h2>
               </div>
-              <img src="assets/images/floor-plan/UnitPlan.webp" alt="" class="img-fluid">
-              <div class="btn_box text-center">
+              <div class="row row-cols-1 row-cols-md-2 g-2"> <!-- Gap between images -->
+                <!-- Image 1 -->
+                <div class="col position-relative">
+                  <img src="assets/images/floor-plan/1_bhk.webp" alt="" class="img-fluid custom-height">
+                  <div class="overlay">
+                    <div class="text">2 BHK Plan</div>
+                  </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="col position-relative">
+                  <img src="assets/images/floor-plan/2_bhk.webp" alt="" class="img-fluid custom-height">
+                  <div class="overlay">
+                    <div class="text">3 BHK Plan</div>
+                  </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="col position-relative">
+                  <img src="assets/images/floor-plan/3_bhk.webp" alt="" class="img-fluid custom-height">
+                  <div class="overlay">
+                    <div class="text">4 BHK Plan</div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn_box text-center mx-auto">
                 <a href="#" class="btn mt-4 text-white enquiryBtn1 pricing-btn custom-btn data-id-btn" data-bs-target="#enquire-modal"
-              data-bs-toggle="modal" data-bs-whatever="Request Unit Layout Plans" data-id="Unit Layout Plan">
-                <span></span><span></span><span></span><span></span>
-                Request Unit Layout Plans
+                  data-bs-toggle="modal" data-bs-whatever="Request Unit Layout Plans" data-id="Unit Layout Plan">
+                  Request Unit Layout Plans
                 </a>
               </div>
             </div>
-          </div>
+          </div>          
         </div>
       </section>
         <!-- xxxxxxxxxxxx floor plan end xxxxxxxxxxxx -->
@@ -481,35 +504,56 @@ data-bs-toggle="modal" data-bs-whatever="Request Brochure" data-id="Brochure"><i
 
     <!-- xxxxxxxxxxxx Gallery section  xxxxxxxxxxxx -->
         <section id="gallery">
-          <div class="container wow fadeInUp">
+          <div class="container">
             <!-- data-wow-delay="0.1s" -->
             <h1 class="text-center color-imp">Project Gallery</h1>
             <div class="content-gallery">
               <div class="gallery js-gallery">
                   <div class="gallery-item">
                   <div class="gallery-img-holder js-gallery-popup">
-                    <img src="assets/images/gallery/Gallery1.webp" alt="" class="gallery-img">
+                    <img src="assets/images/gallery/g1.webp" alt="" class="gallery-img">
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-img-holder js-gallery-popup">
-                    <img src="assets/images/gallery/Gallery2.webp" alt="" class="gallery-img">
+                    <img src="assets/images/gallery/g2.webp" alt="" class="gallery-img">
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-img-holder js-gallery-popup">
-                    <img src="assets/images/gallery/Gallery3.webp" alt="" class="gallery-img">
+                    <img src="assets/images/gallery/g3.webp" alt="" class="gallery-img">
                   </div>
                 </div>
                 <div class="gallery-item">
                   <div class="gallery-img-holder js-gallery-popup">
-                    <img src="assets/images/gallery/Gallery4.webp" alt="" class="gallery-img">
+                    <img src="assets/images/gallery/g4.webp" alt="" class="gallery-img">
                   </div>
                 </div>
                 
                 <div class="gallery-item">
                   <div class="gallery-img-holder js-gallery-popup">
-                    <img src="assets/images/gallery/Gallery8.webp" alt="" class="gallery-img">
+                    <img src="assets/images/gallery/g5.webp" alt="" class="gallery-img">
+                  </div>
+                </div>
+
+                <div class="gallery-item">
+                  <div class="gallery-img-holder js-gallery-popup">
+                    <img src="assets/images/gallery/g7.webp" alt="" class="gallery-img">
+                  </div>
+                </div>
+                <div class="gallery-item">
+                  <div class="gallery-img-holder js-gallery-popup">
+                    <img src="assets/images/gallery/g8.webp" alt="" class="gallery-img">
+                  </div>
+                </div>
+                <div class="gallery-item">
+                  <div class="gallery-img-holder js-gallery-popup">
+                    <img src="assets/images/gallery/g9.webp" alt="" class="gallery-img">
+                  </div>
+                </div>
+                <div class="gallery-item">
+                  <div class="gallery-img-holder js-gallery-popup">
+                    <img src="assets/images/gallery/g10.webp" alt="" class="gallery-img">
                   </div>
                 </div>
               </div>
@@ -523,7 +567,7 @@ data-bs-toggle="modal" data-bs-whatever="Request Brochure" data-id="Brochure"><i
             <div class="container">
                 <h2 class="text-left color-imp ">Kalpataru Advay Borivali Location Advantage</h2>
                 <div class="row mt-2">
-                    <div class="col-xl-6">
+                    <div class="col-xl-12">
                         
                         <iframe frameborder="0" allowfullscreen sandbox="allow-scripts allow-same-origin" title="Google map of Kalpataru Advay Borivali" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.1650614491214!2d72.8423377!3d19.231636799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1007597c883%3A0xee345afc5cab5f4d!2sKalpataru%20Advay%20Borivali!5e0!3m2!1sen!2sin!4v1724911531548!5m2!1sen!2sin" width="100%" height="330" style="border: 1px solid #333;padding: 2px;background: #FFF;"></iframe>
                     </div>
@@ -891,7 +935,6 @@ data-bs-toggle="modal" data-bs-whatever="Request Brochure" data-id="Brochure"><i
   <script src="assets/js/meta_name.js"></script>
 
   <script type="text/javascript">
-
     $(document).ready(function () {
       $('.js-gallery').slick({
         slidesToShow: 4,
@@ -930,12 +973,13 @@ data-bs-toggle="modal" data-bs-whatever="Request Brochure" data-id="Brochure"><i
           }
         ]
       });
+      
       $('.js-gallery').slickLightbox({
         src: 'src',
         itemSelector: '.js-gallery-popup img',   
         background: 'rgba(0, 0, 0, .7)'
       });
-      
+  
       $('#slick1').slick({
         dots: false,
         infinite: true,
@@ -943,25 +987,25 @@ data-bs-toggle="modal" data-bs-whatever="Request Brochure" data-id="Brochure"><i
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
-            {
+          {
                 breakpoint: 768, // Adjust according to your needs
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
             }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
         ]
-                });
+      });
     });
-
   </script>
+  
 
 </body>
 
