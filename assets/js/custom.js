@@ -26,9 +26,9 @@ $(document).ready(function () {
       // Check if the URL parameter is Google or google
       if (utm_source.toLowerCase() === "google") {
         document.getElementById("discovery").href =
-          "https://api.whatsapp.com/send?phone=917304824642&text=Hello%2C%20I%20would%20like%20to%20explore%20further%20details%20about%20Kalpataru-Advay, Borivali.";
+          "https://api.whatsapp.com/send?phone=919004523829&text=Hello%2C%20I%20would%20like%20to%20explore%20further%20details%20about%20Kalpataru-Advay, Borivali.";
         document.getElementById("discovery_mobile").href =
-          "https://api.whatsapp.com/send?phone=917304824642&text=Hello%2C%20I%20would%20like%20to%20explore%20further%20details%20about%20Kalpataru-Advay, Borivali.";
+          "https://api.whatsapp.com/send?phone=919004523829&text=Hello%2C%20I%20would%20like%20to%20explore%20further%20details%20about%20Kalpataru-Advay, Borivali.";
         // var whatsappBtnDesktop = document.getElementById("discovery");
         //         if (whatsappBtnDesktop) {
         //             whatsappBtnDesktop.parentNode.removeChild(whatsappBtnDesktop);
@@ -40,18 +40,18 @@ $(document).ready(function () {
         //         }
       } else if (utm_source.toLowerCase() === "ppc") {
         document.getElementById("discovery").href =
-          "https://api.whatsapp.com/send?phone=917304824642&text=Hi%20I'm%20interested-20iay, Borivalin%20Learning%20more%20About%20Kalpataru Adv.%20Please%20Share%20Details.";
+          "https://api.whatsapp.com/send?phone=919004523829&text=Hi%20I'm%20interested-20iay, Borivalin%20Learning%20more%20About%20Kalpataru Adv.%20Please%20Share%20Details.";
         document.getElementById("discovery_mobile").href =
-          "https://api.whatsapp.com/send?phone=917304824642&text=Hi%20I'm%20interested-20iay, Borivalin%20Learning%20more%20about%20Kalpataru Adv.%20Please%20Share%20Details.";
+          "https://api.whatsapp.com/send?phone=919004523829&text=Hi%20I'm%20interested-20iay, Borivalin%20Learning%20more%20about%20Kalpataru Adv.%20Please%20Share%20Details.";
       }
     } else if (mainsource) {
       // Check if the URL parameter is from mainsource
       // Check if the URL parameter is GoogleY, GoogleA, etc.
       if (mainsource.startsWith("Google")) {
         document.getElementById("discovery").href =
-          "https://api.whatsapp.com/send?phone=917304824642&text=Hello%2C%20I%20would%20like%20to%20explore%20further%20details%20about%20Kalpataru-Advay, Borivali.";
+          "https://api.whatsapp.com/send?phone=919004523829&text=Hello%2C%20I%20would%20like%20to%20explore%20further%20details%20about%20Kalpataru-Advay, Borivali.";
         document.getElementById("discovery_mobile").href =
-          "https://api.whatsapp.com/send?phone=917304824642&text=Hello%2C%20I%20would%20like%20to%20explore%20further%20details%20about%20Kalpataru-Advay, Borivali.";
+          "https://api.whatsapp.com/send?phone=919004523829&text=Hello%2C%20I%20would%20like%20to%20explore%20further%20details%20about%20Kalpataru-Advay, Borivali.";
         // var whatsappBtnDesktop = document.getElementById("discovery");
         //         if (whatsappBtnDesktop) {
         //             whatsappBtnDesktop.parentNode.removeChild(whatsappBtnDesktop);
@@ -63,9 +63,9 @@ $(document).ready(function () {
         //         }
       } else if (mainsource.toLowerCase() === "ppc") {
         document.getElementById("discovery").href =
-          "https://api.whatsapp.com/send?phone=917304824642&text=Hi%20I'm%20interested-20iay, Borivalin%20Learning%20more%20About%20Kalpataru Adv.%20Please%20Share%20Details.";
+          "https://api.whatsapp.com/send?phone=919004523829&text=Hi%20I'm%20interested-20iay, Borivalin%20Learning%20more%20About%20Kalpataru Adv.%20Please%20Share%20Details.";
         document.getElementById("discovery_mobile").href =
-          "https://api.whatsapp.com/send?phone=917304824642&text=Hi%20I'm%20interested-20iay, Borivalin%20Learning%20more%20about%20Kalpataru Adv.%20Please%20Share%20Details.";
+          "https://api.whatsapp.com/send?phone=919004523829&text=Hi%20I'm%20interested-20iay, Borivalin%20Learning%20more%20about%20Kalpataru Adv.%20Please%20Share%20Details.";
       }
     }
   });
