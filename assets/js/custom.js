@@ -238,4 +238,42 @@ function submitForm(event, formName) {
     .catch((error) => {
       console.error("Email sending failed.", error);
     });
+    sendLeadData(form_data)
+}
+
+function sendLeadData(form_data) {
+  const payload = {
+    country_code: "+91",
+    email: form_data.email,
+    is_tc_agree: "1",
+    name: form_data.name,
+    nationality: "1",
+    number: form_data.mobile,
+    platform: "1",
+    is_magnet: "1",
+    magnet_id: "39400",
+    project_id: "3427",
+    source_id: "62"
+  };
+
+  fetch("https://api.homesfy.in/api/leads/leadcreation/webhook", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQyNzQwNCIsImRvbWFpbl9uYW1lIjoiTkEiLCJlbWFpbCI6InJpa2V0Lm1laHRhQGdtYWlsLmNvbSIsImlhdCI6MTcxOTIyMjAxMX0.MJLFmtZ9V4Jnz9e-Z3aiOR7nmdOsY8QvDApgcuGsjyY",
+    },
+    body: JSON.stringify(payload),
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      window.location.href = "thank-you.html";
+    })
+    .catch(error => {
+      console.error("Error:", error);
+    });
 }
