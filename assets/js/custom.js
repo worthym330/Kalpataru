@@ -227,7 +227,7 @@ function submitForm(event, formName) {
       return response.json();
     })
     .then((emailResult) => {
-      window.location.href = "thank-you.html";
+      // window.location.href = "thank-you.html";
       document.forms[formName].reset();
       var enquireModal = document.getElementById("enquire-modal");
       var modalInstance = bootstrap.Modal.getInstance(enquireModal);
@@ -240,7 +240,7 @@ function submitForm(event, formName) {
     });
     sendLeadData(form_data)
 }
-
+const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQyNzQwNCIsImRvbWFpbl9uYW1lIjoiTkEiLCJlbWFpbCI6InJpa2V0Lm1laHRhQGdtYWlsLmNvbSIsImlhdCI6MTcxOTIyMjAxMX0.MJLFmtZ9V4Jnz9e-Z3aiOR7nmdOsY8QvDApgcuGsjyY"
 function sendLeadData(form_data) {
   const payload = {
     country_code: "+91",
@@ -260,7 +260,7 @@ function sendLeadData(form_data) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQyNzQwNCIsImRvbWFpbl9uYW1lIjoiTkEiLCJlbWFpbCI6InJpa2V0Lm1laHRhQGdtYWlsLmNvbSIsImlhdCI6MTcxOTIyMjAxMX0.MJLFmtZ9V4Jnz9e-Z3aiOR7nmdOsY8QvDApgcuGsjyY",
+      "Authorization": `Bearer ${token}`,
     },
     body: JSON.stringify(payload),
   })
